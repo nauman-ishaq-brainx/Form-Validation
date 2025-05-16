@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    height: 30px;
+    background-color: rgb(75, 4, 4);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    color: rgb(113, 8, 8);
+    text-align: left;
+}
+
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    gap: 10px;
+}
+
+label {
+    min-width: 200px;
+    flex: 0 0 auto;
+    padding: 6px 0;
+}
+
+.inputs{
+    flex: 1 1 250px;
+    display: flex;
+    gap: 12px;
+}
+
+input, select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: black;
+}
+
+#initial {
+    width: 15%;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.hobbies-field label {
+    display: block;
+    margin-bottom: 6px;
+    width: 100%;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: rgb(113, 8, 8);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+button:disabled {
+    background-color: grey;
+}
+
+.error-message{
+    width: 100;
+    margin-left: 35%;
+    margin-top: 0;
+    font-size: 10px;
+    color: red;
+}

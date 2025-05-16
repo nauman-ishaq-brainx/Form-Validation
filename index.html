@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birth Date</title>
+  <link rel="stylesheet" href="styles/application.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Birth Date</h1>
+
+    <form>
+      <div class="section">
+        <h3>
+            Enter your details
+        </h3>
+        <div class="field">
+          <label for="first">First Name</label>
+          <div class="inputs">
+            <input id="first" type="text" placeholder="Enter your First Name" required oninput="handleFirstName(); validateAll()" />
+          </div>
+          <p class="error-message" id="firstNameParagraph"></p>
+        </div>
+
+        <div class="field">
+          <label for="last">Last Name</label>
+          <div class="inputs">
+            <input id="last" type="text" placeholder="Enter your Last Name" required oninput="handleLastName(); validateAll()" />
+          </div>
+          <p class="error-message" id="lastNameParagraph"></p>
+        </div>
+
+        <div class="field">
+          <label for="last">Email</label>
+          <div class="inputs">
+            <input id="email" type="text" placeholder="Enter your Email" required oninput="handleEmail(); validateAll()" />
+          </div>
+          <p class="error-message" id="emailParagraph"></p>
+        </div>
+
+
+
+         <div class="field">
+          <label for="contact">Contact</label>
+          <div class="inputs">
+            <input id="contact" type="number" placeholder="Enter your Contact Number" oninput="handleContact(); validateAll()"/>
+          </div>
+          <p class="error-message" id="contactParagraph"></p>
+        </div>
+
+        <div class="field">
+          <label for="age">Age</label>
+          <div class="inputs">
+            <input id="age" type="number" placeholder="Enter your Age" oninput="handleAge(); validateAll()"/>
+          </div>
+          <p class="error-message" id="ageParagraph"></p>
+        </div>
+
+        <div class="field">
+          <label for="pass">Password</label>
+          <div class="inputs">
+            <input id="pass" type="password" placeholder="Enter your password" required oninput="handlePassword(); validateAll()"/>
+          </div>
+          <p class="error-message" id="passParagraph"></p>
+        </div>
+        <div class="field">
+          <label for="pass2">Password 2</label>
+          <div class="inputs">
+            <input id="pass2" type="password" placeholder="confirm Password" required oninput="handlePassword2(); validateAll()"/>
+          </div>
+          <p class="error-message" id="passParagraph2"></p>
+        </div>
+      <button id="submit-button" type="submit" disabled>Submit</button>
+    </form>
+  </div>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
