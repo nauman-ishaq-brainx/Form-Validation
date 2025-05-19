@@ -1,8 +1,9 @@
 
+// add error message to specific paragraph
 function changeParagraph(id, text){
     document.getElementById(id).innerHTML = text;
 }
-
+//validate password
 function validatePassword(){
 
     let pass = document.getElementById('pass');
@@ -138,7 +139,7 @@ function handleLastName(){
         changeParagraph('lastNameParagraph', '')
     }
 }
-
+//validate first name
 function validateFirstName(){
     let inputName = document.getElementById('first');
     if (inputName.value.length < 1){
@@ -147,7 +148,7 @@ function validateFirstName(){
     return true;
 
 }
-
+// validate last name
 function validateLastName(){
     let inputName = document.getElementById('last');
     if (inputName.value.length < 1){
@@ -157,7 +158,7 @@ function validateLastName(){
 
 }
 
-
+//Validate before enabling submit button
 function validateAll(){
     let funcs = [validatePassword, ValidatePassword2, ValidateAge, ValidateContact, validateFirstName, validateLastName];
     let disableButton = false;
