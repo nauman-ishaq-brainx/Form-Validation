@@ -9,32 +9,32 @@
 <body>
 
   <div class="container">
-    <h1>Birth Date</h1>
+    <h1>Register</h1>
 
     <form>
       <div class="section">
-        <h3>
-            Enter your details
+        <h3 class="main-heading">
+            Enter Details
         </h3>
         <div class="field">
-          <label for="first">First Name</label>
-          <div class="inputs">
+          <label class="fieldLabel" for="first">First Name</label>
+          <div class="field-input">
             <input id="first" type="text" placeholder="Enter your First Name" required oninput="handleFirstName(); validateAll()" />
           </div>
           <p class="error-message" id="firstNameParagraph"></p>
         </div>
 
         <div class="field">
-          <label for="last">Last Name</label>
-          <div class="inputs">
+          <label class="fieldLabel" for="last">Last Name</label>
+          <div class="field-input">
             <input id="last" type="text" placeholder="Enter your Last Name" required oninput="handleLastName(); validateAll()" />
           </div>
           <p class="error-message" id="lastNameParagraph"></p>
         </div>
 
         <div class="field">
-          <label for="last">Email</label>
-          <div class="inputs">
+          <label class="fieldLabel" for="last">Email</label>
+          <div class="field-input">
             <input id="email" type="text" placeholder="Enter your Email" required oninput="handleEmail(); validateAll()" />
           </div>
           <p class="error-message" id="emailParagraph"></p>
@@ -43,31 +43,31 @@
 
 
          <div class="field">
-          <label for="contact">Contact</label>
-          <div class="inputs">
+          <label class="fieldLabel" for="contact">Contact</label>
+          <div class="field-input">
             <input id="contact" type="number" placeholder="Enter your Contact Number" oninput="handleContact(); validateAll()"/>
           </div>
           <p class="error-message" id="contactParagraph"></p>
         </div>
 
         <div class="field">
-          <label for="age">Age</label>
-          <div class="inputs">
+          <label class="fieldLabel" for="age">Age</label>
+          <div class="field-input">
             <input id="age" type="number" placeholder="Enter your Age" oninput="handleAge(); validateAll()"/>
           </div>
           <p class="error-message" id="ageParagraph"></p>
         </div>
 
         <div class="field">
-          <label for="pass">Password</label>
-          <div class="inputs">
+          <label class="fieldLabel" for="pass">Password</label>
+          <div class="field-input">
             <input id="pass" type="password" placeholder="Enter your password" required oninput="handlePassword(); validateAll()"/>
           </div>
           <p class="error-message" id="passParagraph"></p>
         </div>
         <div class="field">
-          <label for="pass2">Password 2</label>
-          <div class="inputs">
+          <label class="fieldLabel" for="pass2">Password 2</label>
+          <div class="field-input">
             <input id="pass2" type="password" placeholder="confirm Password" required oninput="handlePassword2(); validateAll()"/>
           </div>
           <p class="error-message" id="passParagraph2"></p>

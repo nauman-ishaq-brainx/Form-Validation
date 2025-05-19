@@ -180,6 +180,7 @@ function validateAll(){
 function validateEmail(){
     var expression = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let emails = document.getElementById("email").value.split(',');
+    emails = emails.map(element => element.trim())
     if (emails.at(-1) == ''){
         emails.pop()
     }
